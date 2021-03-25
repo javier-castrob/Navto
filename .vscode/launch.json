@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run EjemploNavTo-EjemploNavTo",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/ejemplonavto-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/EjemploNavToEjemploNavTo/index.html",
+        "--ui5",
+        "{\"version\":\"1.84.9\"}"
+      ],
+      "cwd": "${workspaceFolder}/EjemploNavTo",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/EjemploNavTo/EjemploNavTo\"}"
+      },
+      "envFile": "${workspaceFolder}/EjemploNavTo/.env1",
+      "preLaunchTask": "Build EjemploNavTo"
+    }
+  ]
+}

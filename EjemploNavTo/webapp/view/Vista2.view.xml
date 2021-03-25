@@ -1,0 +1,21 @@
+<mvc:View controllerName="EjemploNavTo.EjemploNavTo.controller.Vista2"  xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Page id="page" title="{i18n>titleVista2}">
+		<content>
+            <HBox justifyContent="Center" alignItems="Center" class="sapUiSmallMargin">
+                    <Text text="{Text>/text}"></Text>
+            </HBox>
+            <FlexBox
+                alignItems="Start"
+                justifyContent="Center">
+                <VBox justifyContent="Center" alignItems="Center" class="sapUiSmallMargin">
+                   <Text text="Ir hacia la Vista 3" class="sapUiMediumMarginTop"></Text>
+                    <Button text="Vista 3" press="onNavigateVista3" />
+                </VBox>
+                <VBox justifyContent="Center" alignItems="Center" class="sapUiSmallMargin">
+                   <Text text="Volver Atras" class="sapUiMediumMarginTop"></Text>
+                    <Button type="Emphasized" text="Atras" press="onNavigateBack" />
+                </VBox>
+            </FlexBox>
+        </content>
+	</Page>
+</mvc:View>
